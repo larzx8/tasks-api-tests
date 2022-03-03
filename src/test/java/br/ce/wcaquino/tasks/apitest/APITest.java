@@ -37,7 +37,7 @@ public class APITest {
 	}	
 	
 	@Test
-	public void naoDeveAdicionarTarefaInvalidaa() {
+	public void naoDeveAdicionarTarefaInvalida() {
 		RestAssured.given()
 			.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2021-12-30\" }")
 			.contentType(ContentType.JSON)
@@ -46,7 +46,7 @@ public class APITest {
 		.then()
 			.log().all()
 			.statusCode(400)
-			.body("message",CoreMatchers.is("Due date must not be in past"))			
+			.body("message",CoreMatchers.is("Due cdsdate must not be in past"))			
 		;
 	}	
 }
