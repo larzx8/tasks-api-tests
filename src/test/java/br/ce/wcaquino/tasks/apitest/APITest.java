@@ -37,7 +37,7 @@ public class APITest {
 	}	
 	
 	@Test
-	public void naoDeveAdicionarTarefaInvalida() {
+	public void naoDeveAdicionarTarefaInvalidaa() {
 		RestAssured.given()
 			.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2021-12-30\" }")
 			.contentType(ContentType.JSON)
