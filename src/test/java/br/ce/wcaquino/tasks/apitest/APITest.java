@@ -35,7 +35,6 @@ public class APITest {
 			.statusCode(201)
 		;
 	}	
-	
 	@Test
 	public void naoDeveAdicionarTarefaInvalida() {
 		RestAssured.given()
