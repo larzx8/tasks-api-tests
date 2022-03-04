@@ -45,7 +45,7 @@ public class APITest {
 		.then()
 			.log().all()
 			.statusCode(400)
-			.body("message",CoreMatchers.is("Due cdsdate must not be in past"))			
+			.body("message",CoreMatchers.is("Due date must not be in past"))			
 		;
 	}	
 }
